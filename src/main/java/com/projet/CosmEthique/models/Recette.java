@@ -21,6 +21,9 @@ public class Recette {
         this.description_recette = description_recette;
     }
 
+    public void setGeneree(boolean b) {
+    }
+
 
     @Entity
     public class RealiserModel {
