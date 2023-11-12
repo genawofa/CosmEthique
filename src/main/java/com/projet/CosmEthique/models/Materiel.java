@@ -4,10 +4,9 @@ import lombok.Data;
 
 
 import javax.persistence.*;
-
+@Data
 @Entity
 @Table(name = "materiel")
-
 public class Materiel {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -26,5 +25,16 @@ public class Materiel {
         this.nom_materiel = nom_materiel;
         this.prix_materiel = prix_materiel;
         this.stock = stock;
+    }
+
+
+    @Override
+    public String toString() {
+        return "Materiel{" +
+                "idMateriel=" + id_materiel +
+                ", nomMateriel='" + nom_materiel + '\'' +
+                ", prixMateriel=" + prix_materiel +
+                '}';
+
     }
 }

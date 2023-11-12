@@ -18,10 +18,17 @@ public class Stock {
     private Integer quantiteSortante;
 
 
-        public void Stock(Long idStock, int quantiteEntrante, int quantiteSortante) {
-            this.idStock = idStock;
-            this.quantiteEntrante = quantiteEntrante;
-            this.quantiteSortante = quantiteSortante;
-        }
+    public void Stock(Long idStock, int quantiteEntrante, int quantiteSortante) {
+        this.idStock = idStock;
+        this.quantiteEntrante = quantiteEntrante;
+        this.quantiteSortante = quantiteSortante;
     }
+
+
+    public Integer getQuantiteEntrante() {
+        return null;
+    }
+}
+
+
 
